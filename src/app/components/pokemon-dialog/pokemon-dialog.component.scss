@@ -1,0 +1,134 @@
+.pokemon-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #85acd3;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+  
+    div {
+      text-align: center;
+    }
+  
+    .name {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 8px;
+    }
+  
+    img {
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      margin-bottom: 16px;
+      transition: transform 0.3s ease;
+      
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  
+    h2 {
+      font-size: 1.25rem;
+      color: #444;
+      margin-bottom: 8px;
+    }
+  
+    .id {
+      font-size: 1.5rem;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+  
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px 0;
+  
+      li {
+        background-color: #b8c1ce;
+        border-radius: 8px;
+        margin: 4px;
+        padding: 8px 12px;
+        font-size: 1rem;
+        color: #333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  
+    .types, .abilities {
+      margin-top: 12px;
+    }
+  }
+  
+  // Estilos responsivos
+  @media (max-width: 768px) {
+    .pokemon-card-container {
+      flex-direction: column;
+      margin: 12px;
+      padding: 12px;
+    }
+  
+    .name {
+      font-size: 1.4rem;
+    }
+  
+    img {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .id {
+      font-size: 1.3rem;
+    }
+  
+    ul li {
+      font-size: 0.95rem;
+      padding: 6px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pokemon-card-container {
+      margin: 8px;
+      padding: 10px;
+    }
+  
+    .name {
+      font-size: 1.25rem;
+    }
+  
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .id {
+      font-size: 1.1rem;
+    }
+  
+    ul li {
+      font-size: 0.875rem;
+      padding: 4px 8px;
+    }
+  }
+  
